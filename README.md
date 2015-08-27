@@ -1,7 +1,5 @@
 基于深度学习的中文分词尝试
 
-最近研究deeplearning和NLP比较多，其实就是在看Stanford的cs224d课程啦（http://cs224d.stanford.edu/syllabus.html）。抽空尝试了一下使用词向量和神经网络做中文分词。
-
 使用的数据是参考资料中的中文分词资源，即Bakeoff中微软研究院的中文语料库，它的训练文本带有每个字的标注（BEMS），同时带有测试文本和测试脚本。此外使用了补充的语料库，即sogou新闻语料库，不带字标注，但可用来学习字向量。
 
 使用的工具是python中的gensim库和keras库，gensim可用于学习词向量，keras是基于theano的深度学习库。在本例中只使用了普通的MLP方法。
